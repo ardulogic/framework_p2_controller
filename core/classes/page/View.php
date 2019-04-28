@@ -25,7 +25,7 @@ class View {
      * to a string
      * @param string $tpl_path Full path to the template file
      */
-    public function render($tpl_path) {
+    public function render($tpl_path = null) {
         // Check if template file exists
         if (!file_exists($tpl_path)) {
             throw new Exception(strtr(
